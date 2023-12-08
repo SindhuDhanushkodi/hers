@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-04 12:14:59.639414",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "barcode",
+  "variant_name",
+  "frontend_location"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "Barcode"
+  },
+  {
+   "columns": 2,
+   "fieldname": "variant_name",
+   "fieldtype": "Data",
+   "label": "Variant Name"
+  },
+  {
+   "fieldname": "frontend_location",
+   "fieldtype": "Link",
+   "label": "Frontend Location",
+   "options": "Frontend Location"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-05 15:36:07.482975",
+ "modified_by": "Administrator",
+ "module": "Hers",
+ "name": "Hers-Barcode",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

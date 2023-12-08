@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{item_code}",
+ "creation": "2023-12-04 12:13:26.244135",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "brand",
+  "item_group",
+  "category",
+  "frontend_location",
+  "warehouse_location",
+  "column_break_ja6ti",
+  "modified_item_name",
+  "modified_uom",
+  "barcode",
+  "shelf_life_type",
+  "shelf_life",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "barcode",
+   "fieldtype": "Table",
+   "label": "Barcode",
+   "options": "Hers-Barcode"
+  },
+  {
+   "bold": 1,
+   "fieldname": "frontend_location",
+   "fieldtype": "Link",
+   "label": "Frontend Location",
+   "options": "Frontend Location",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
+   "fieldname": "brand",
+   "fieldtype": "Link",
+   "label": "Brand",
+   "options": "Brand Name"
+  },
+  {
+   "bold": 1,
+   "fieldname": "warehouse_location",
+   "fieldtype": "Link",
+   "label": "Warehouse Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "HERS",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_ja6ti",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "shelf_life_type",
+   "fieldtype": "Select",
+   "label": "Shelf Life Type",
+   "options": "Month\nDay\nYear"
+  },
+  {
+   "bold": 1,
+   "fieldname": "shelf_life",
+   "fieldtype": "Int",
+   "label": "Shelf Life "
+  },
+  {
+   "bold": 1,
+   "fieldname": "modified_item_name",
+   "fieldtype": "Data",
+   "label": "Modified Item Name"
+  },
+  {
+   "bold": 1,
+   "fieldname": "modified_uom",
+   "fieldtype": "Link",
+   "label": "Modified UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "label": "Category"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-06 15:48:48.907529",
+ "modified_by": "Administrator",
+ "module": "Hers",
+ "name": "HERS",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
