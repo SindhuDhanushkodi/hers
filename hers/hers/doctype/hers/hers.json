@@ -26,7 +26,7 @@
   {
    "bold": 1,
    "fieldname": "item_code",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "in_list_view": 1,
    "label": "Item Code",
    "reqd": 1
@@ -59,7 +59,8 @@
    "fieldname": "warehouse_location",
    "fieldtype": "Link",
    "label": "Warehouse Location",
-   "options": "Location"
+   "options": "Location",
+   "read_only": 1
   },
   {
    "fieldname": "amended_from",
@@ -96,6 +97,7 @@
   },
   {
    "bold": 1,
+   "default": "Nos",
    "fieldname": "modified_uom",
    "fieldtype": "Link",
    "label": "Modified UOM",
@@ -105,17 +107,19 @@
    "fieldname": "item_group",
    "fieldtype": "Link",
    "label": "Item Group",
-   "options": "Item Group"
+   "options": "Item Group",
+   "read_only": 1
   },
   {
    "fieldname": "category",
    "fieldtype": "Data",
-   "label": "Category"
+   "label": "Category",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-06 15:48:48.907529",
+ "modified": "2023-12-11 11:25:18.278356",
  "modified_by": "Administrator",
  "module": "Hers",
  "name": "HERS",
