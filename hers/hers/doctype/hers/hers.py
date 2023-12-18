@@ -21,4 +21,4 @@ def item_code():
             missing_numbers.append(i)
     if not missing_numbers:
         missing_numbers = [int_list[-1] + 1]
-    return {"missing_numbers" :missing_numbers, "location": location}
+    return {"missing_numbers" :missing_numbers[0], "location": location}
