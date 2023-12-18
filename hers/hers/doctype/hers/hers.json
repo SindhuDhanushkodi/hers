@@ -11,16 +11,20 @@
   "item_code",
   "brand",
   "item_group",
+  "modified_item_name",
+  "item_type",
+  "sub_category",
   "category",
+  "modified_uom",
+  "mrp",
   "frontend_location",
   "warehouse_location",
-  "column_break_ja6ti",
-  "modified_item_name",
-  "modified_uom",
+  "modified_item_code",
   "barcode",
   "shelf_life_type",
   "shelf_life",
-  "amended_from"
+  "amended_from",
+  "column_break_mmct4"
  ],
  "fields": [
   {
@@ -51,6 +55,7 @@
    "bold": 1,
    "fieldname": "brand",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Brand",
    "options": "Brand Name"
   },
@@ -73,26 +78,26 @@
    "search_index": 1
   },
   {
-   "fieldname": "column_break_ja6ti",
-   "fieldtype": "Column Break"
-  },
-  {
    "bold": 1,
    "fieldname": "shelf_life_type",
    "fieldtype": "Select",
    "label": "Shelf Life Type",
-   "options": "Month\nDay\nYear"
+   "options": "Month\nDay\nYear\nNo Shelf Life"
   },
   {
    "bold": 1,
    "fieldname": "shelf_life",
    "fieldtype": "Int",
-   "label": "Shelf Life "
+   "label": "Shelf Life ",
+   "read_only_depends_on": "eval:doc.shelf_life_type =='No Shelf Life'"
   },
   {
    "bold": 1,
    "fieldname": "modified_item_name",
    "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Modified Item Name"
   },
   {
@@ -111,15 +116,43 @@
    "read_only": 1
   },
   {
+   "fetch_from": "item_type.category",
    "fieldname": "category",
    "fieldtype": "Data",
    "label": "Category",
    "read_only": 1
+  },
+  {
+   "fieldname": "mrp",
+   "fieldtype": "Currency",
+   "label": "M.R.P"
+  },
+  {
+   "fieldname": "item_type",
+   "fieldtype": "Link",
+   "label": "Item Type",
+   "options": "Item Category"
+  },
+  {
+   "fetch_from": "item_type.sub_category",
+   "fieldname": "sub_category",
+   "fieldtype": "Data",
+   "label": "Sub Category",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_mmct4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "modified_item_code",
+   "fieldtype": "Data",
+   "label": "Modified Item Code"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-11 11:25:18.278356",
+ "modified": "2023-12-15 11:48:15.250697",
  "modified_by": "Administrator",
  "module": "Hers",
  "name": "HERS",
