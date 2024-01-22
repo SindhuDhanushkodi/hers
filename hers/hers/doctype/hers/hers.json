@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:{item_code}",
  "creation": "2023-12-04 12:13:26.244135",
@@ -16,6 +17,7 @@
   "sub_category",
   "category",
   "modified_uom",
+  "column_break_mmct4",
   "mrp",
   "frontend_location",
   "warehouse_location",
@@ -23,8 +25,7 @@
   "barcode",
   "shelf_life_type",
   "shelf_life",
-  "amended_from",
-  "column_break_mmct4"
+  "amended_from"
  ],
  "fields": [
   {
@@ -152,7 +153,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-15 11:48:15.250697",
+ "modified": "2024-01-22 11:54:54.562405",
  "modified_by": "Administrator",
  "module": "Hers",
  "name": "HERS",
